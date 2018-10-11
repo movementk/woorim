@@ -1,0 +1,232 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&subset=korean");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+/* 초기화 */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+p {
+  margin-bottom: 0; }
+
+label {
+  margin: 0;
+  font-weight: 400; }
+
+ul, ol {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+
+dl {
+  margin-bottom: 0; }
+  dl dd {
+    margin-bottom: 0; }
+
+address {
+  margin-bottom: 0; }
+
+figure {
+  margin: 0; }
+
+button:hover, button:focus {
+  box-shadow: none; }
+
+a {
+  color: inherit; }
+  a:hover, a:focus {
+    color: inherit;
+    box-shadow: none;
+    text-decoration: none; }
+
+.table {
+  margin: 0; }
+
+.btn {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none !important; }
+
+.form-group {
+  margin: 0; }
+
+.form-control {
+  border-radius: 0;
+  box-shadow: none !important; }
+
+.container .row,
+.container-fluid .row {
+  overflow: hidden; }
+  .container .row .col-1,
+  .container .row .col-md-1,
+  .container .row .col-lg-1,
+  .container-fluid .row .col-1,
+  .container-fluid .row .col-md-1,
+  .container-fluid .row .col-lg-1 {
+    float: left; }
+  .container .row .col-2,
+  .container .row .col-md-2,
+  .container .row .col-lg-2,
+  .container-fluid .row .col-2,
+  .container-fluid .row .col-md-2,
+  .container-fluid .row .col-lg-2 {
+    float: left; }
+  .container .row .col-3,
+  .container .row .col-md-3,
+  .container .row .col-lg-3,
+  .container-fluid .row .col-3,
+  .container-fluid .row .col-md-3,
+  .container-fluid .row .col-lg-3 {
+    float: left; }
+  .container .row .col-4,
+  .container .row .col-md-4,
+  .container .row .col-lg-4,
+  .container-fluid .row .col-4,
+  .container-fluid .row .col-md-4,
+  .container-fluid .row .col-lg-4 {
+    float: left; }
+  .container .row .col-5,
+  .container .row .col-md-5,
+  .container .row .col-lg-5,
+  .container-fluid .row .col-5,
+  .container-fluid .row .col-md-5,
+  .container-fluid .row .col-lg-5 {
+    float: left; }
+  .container .row .col-6,
+  .container .row .col-md-6,
+  .container .row .col-lg-6,
+  .container-fluid .row .col-6,
+  .container-fluid .row .col-md-6,
+  .container-fluid .row .col-lg-6 {
+    float: left; }
+  .container .row .col-7,
+  .container .row .col-md-7,
+  .container .row .col-lg-7,
+  .container-fluid .row .col-7,
+  .container-fluid .row .col-md-7,
+  .container-fluid .row .col-lg-7 {
+    float: left; }
+  .container .row .col-8,
+  .container .row .col-md-8,
+  .container .row .col-lg-8,
+  .container-fluid .row .col-8,
+  .container-fluid .row .col-md-8,
+  .container-fluid .row .col-lg-8 {
+    float: left; }
+  .container .row .col-9,
+  .container .row .col-md-9,
+  .container .row .col-lg-9,
+  .container-fluid .row .col-9,
+  .container-fluid .row .col-md-9,
+  .container-fluid .row .col-lg-9 {
+    float: left; }
+  .container .row .col-10,
+  .container .row .col-md-10,
+  .container .row .col-lg-10,
+  .container-fluid .row .col-10,
+  .container-fluid .row .col-md-10,
+  .container-fluid .row .col-lg-10 {
+    float: left; }
+  .container .row .col-11,
+  .container .row .col-md-11,
+  .container .row .col-lg-11,
+  .container-fluid .row .col-11,
+  .container-fluid .row .col-md-11,
+  .container-fluid .row .col-lg-11 {
+    float: left; }
+  .container .row .col-12,
+  .container .row .col-md-12,
+  .container .row .col-lg-12,
+  .container-fluid .row .col-12,
+  .container-fluid .row .col-md-12,
+  .container-fluid .row .col-lg-12 {
+    float: left; }
+
+.container {
+  max-width: 1200px !important; }
+
+body {
+  position: relative;
+  min-width: 1400px;
+  font-size: 15px;
+  color: #666;
+  font-weight: 400;
+  padding-top: 100px;
+  font-family: 'Maven Pro', sans-serif; }
+
+.jumbotron {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 1400px;
+  border-radius: 0;
+  background: none; }
+  .jumbotron .visual-slider li {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 970px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%; }
+    .jumbotron .visual-slider li .video {
+      width: 100%;
+      transform: scale(1.5); }
+    .jumbotron .visual-slider li .slogan {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      .jumbotron .visual-slider li .slogan .table-box {
+        display: table;
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto; }
+        .jumbotron .visual-slider li .slogan .table-box .v-align {
+          display: table-cell;
+          height: 100%;
+          vertical-align: middle; }
+          .jumbotron .visual-slider li .slogan .table-box .v-align h3 {
+            position: relative;
+            font-size: 60px;
+            color: #000;
+            opacity: 0;
+            top: -50px;
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+            font-family: 'Lora', serif; }
+    .jumbotron .visual-slider li.active .slogan .table-box .v-align h3 {
+      top: 0;
+      opacity: 1; }
+  .jumbotron .bx-controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 100px;
+    background-color: #fff; }
+    .jumbotron .bx-controls .bx-controls-direction {
+      overflow: hidden; }
+      .jumbotron .bx-controls .bx-controls-direction > a {
+        display: block;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        float: left;
+        font-size: 32px;
+        color: #2b2b2b;
+        border: 0;
+        background: none;
+        padding: 0;
+        margin: 0; }
+
+/*# sourceMappingURL=main.css.map */
