@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&subset=korean");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,400i");
 /* 초기화 */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -148,7 +149,7 @@ a {
 
 body {
   position: relative;
-  min-width: 1400px;
+  min-width: 1200px;
   font-size: 15px;
   color: #666;
   font-weight: 400;

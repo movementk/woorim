@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&subset=korean");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,400i");
 /* 초기화 */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -148,7 +149,7 @@ a {
 
 body {
   position: relative;
-  min-width: 1400px;
+  min-width: 1200px;
   font-size: 15px;
   color: #666;
   font-weight: 400;
@@ -159,7 +160,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  min-width: 1400px;
+  min-width: 1200px;
   border-radius: 0;
   background: none; }
   .jumbotron .visual-slider li {
@@ -172,7 +173,12 @@ body {
     background-position: 50% 50%; }
     .jumbotron .visual-slider li .video {
       width: 100%;
-      transform: scale(1.5); }
+      transform: scale(1.7);
+      -webkit-transform: scale(1.7); }
+      @media (min-width: 1400px) {
+        .jumbotron .visual-slider li .video {
+          transform: scale(1.45);
+          -webkit-transform: scale(1.45); } }
     .jumbotron .visual-slider li .slogan {
       position: absolute;
       top: 0;
@@ -203,30 +209,151 @@ body {
             -webkit-transition-delay: 0s;
             transition-delay: 0s;
             font-family: 'Lora', serif; }
-    .jumbotron .visual-slider li.active .slogan .table-box .v-align h3 {
+    .jumbotron .visual-slider li.action .slogan .table-box .v-align h3 {
       top: 0;
       opacity: 1; }
-  .jumbotron .bx-controls {
+  .jumbotron .control-btn {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 70%;
+    display: block;
     height: 100px;
-    background-color: #fff; }
-    .jumbotron .bx-controls .bx-controls-direction {
-      overflow: hidden; }
-      .jumbotron .bx-controls .bx-controls-direction > a {
-        display: block;
-        width: 100px;
-        height: 100px;
-        line-height: 100px;
-        text-align: center;
+    width: 65%;
+    background-color: #fff;
+    text-align: left; }
+    .jumbotron .control-btn button {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      font-size: 32px;
+      color: #2b2b2b;
+      line-height: 100px;
+      text-align: center;
+      z-index: 1;
+      padding: 0;
+      border: 0;
+      outline: none;
+      background: none; }
+    .jumbotron .control-btn .slick-next {
+      margin-left: 100px; }
+
+/* special-agent
+.special-agent {
+    width: 100%;
+    clear: both;
+    min-width: 1200px;
+    padding: 100px 0;
+    article {
+        display: inline-block;
         float: left;
-        font-size: 32px;
-        color: #2b2b2b;
-        border: 0;
-        background: none;
-        padding: 0;
-        margin: 0; }
+        figure {
+            float: left;
+        }
+        .details {
+            float: left;
+            margin-left: 50px;
+            @media(min-width: 1450px) {
+                margin-left: 100px;
+            }
+            small {
+                position: relative;
+                display: block;
+                font-size: 23px;
+                color: #588973;
+                font-weight: 500;
+                margin-top: -10px;
+            }
+            h3 {
+                font-size: 46px;
+                color: #2b2b2b;
+                font-weight: 400;
+                margin-top: 40px;
+                line-height: 64px;
+                @include lora();
+            }
+            p {
+                position: relative;
+                font-size: 18px;
+                color: #666;
+                font-weight: 300;
+                line-height: 30px;
+                margin-top: -40px;
+            }
+            ul {
+                position: absolute;
+                bottom: 10px;
+                li {
+                    a {
+                        position: relative;
+                        display: inline-block;
+                        width: 130px;
+                        font-size: 16px;
+                        color: #bbb;
+                        font-style: italic;
+                        font-weight: 400;
+                        line-height: 40px;
+                        letter-spacing: 1px;
+                        @include ptserif();
+                        @include transition();
+                        &:after {
+                            font-family: "fontello";
+                            content: "\E800";
+                            float: right;
+                            font-style: normal;
+                        }
+                        span {
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            width: 0;
+                            height: 1px;
+                            background-color: #fe4d00;
+                            @include transition();
+                        }
+                        &:hover {
+                            color: #fe4d00;
+                            span {
+                                width: 100%;
+                                margin-left: -50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:first-child {
+            position: relative;
+            z-index: 1;
+            /*@media(min-width: 1550px) {
+                padding-left: 10%;
+            }
+        }
+        & ~ article {
+            position: relative;
+            clear: both;
+            float: right;
+            margin-top: 30px;
+            margin-left: -330px;
+            /*@media(min-width: 1550px) {
+                padding-right: 10%;
+            }
+        }
+    }
+    > .container-fluid {
+        overflow: hidden;
+        min-width: 1200px;
+        @media(min-width: 1200px) {
+            overflow: visible;
+        }
+    }
+    &:after {
+        content: " ";
+        clear: both;
+        display: inline-block;
+    }
+}
+
+*/
 
 /*# sourceMappingURL=main.css.map */

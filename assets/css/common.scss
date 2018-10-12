@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&subset=korean');
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i');
 
 @mixin transition($property: all, $duration: .15s, $timing: linear, $delay: 0s) {
 	-webkit-transition-property: $property;
@@ -21,6 +22,9 @@
 }
 @mixin lora() {
     font-family: 'Lora', serif;
+}
+@mixin ptserif() {
+    font-family: 'PT Serif', serif;
 }
 
 /* 초기화 */
@@ -100,7 +104,7 @@ a {
 
 body {
     position: relative;
-    min-width: 1400px;
+    min-width: 1200px;
     font-size: 15px;
     color: #666;
     font-weight: 400;
