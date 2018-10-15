@@ -42,7 +42,7 @@
                 </li>
             </ul>
         </div>
-        <!--section class="special-agent">
+        <section class="special-agent">
             <div class="container-fluid">
                 <article>
                     <figure>
@@ -72,7 +72,86 @@
                     </div>
                 </article>
             </div>
-        </section-->
+        </section>
+        <section class="brand-value">
+            <div class="container">
+                <h3>
+                    <small>What we do</small>
+                    Brand value and philosophy is our priority
+                </h3>
+                <p>
+                    Woorim Trade has been operating brands that can succeed in Korea's duty free market <br>based on its brand value and philosophy.
+                </p>
+                <div class="btn-more">
+                    <a href="#" class="btn btn-default" role="button">Detail view <span></span></a>
+                </div>
+            </div>
+        </section>
+        <section class="our-shops">
+            <div class="container">
+                <h3>Our Shops</h3>
+                <div class="shops-list">
+                    <ul class="row">
+                        <li class="col-4">
+                            <figure>
+                                <img src="/assets/images/main/img_shop01.jpg" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h4>The Shilla DFS</h4>
+                                        <a href="#" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="col-4">
+                            <figure>
+                                <img src="/assets/images/main/img_shop02.jpg" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h4>The Shilla I park</h4>
+                                        <a href="#" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="col-4">
+                            <figure>
+                                <img src="/assets/images/main/img_shop03.jpg" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h4>Shinsegae DFS</h4>
+                                        <a href="#" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="office-info">
+            <article class="seoul">
+                <small>Local office</small>
+                <h3>Seoul office </h3>
+                <address>
+                    TWO IFC 22F <br>10, Gukjegeum-ro Yeodeungpo-ku <br>Seoul Korea
+                </address>
+            </article>
+            <article class="japan">
+                <small>Local office</small>
+                <h3>Japan Office</h3>
+                <address>
+                    K TOWER  4F, 1-2-7 Motoakasaka <br>Minato-ku Tokyo-to 107-0051 <br>JAPAN
+                </address>
+            </article>
+            <article class="warehouse">
+                <small>Local office</small>
+                <h3>Warehouse</h3>
+                <address>
+                    Kumno-gil 2-50 Anseong-si <br>Kyounggi-do <br>South korea 
+                </address>
+            </article>
+        </section>
     </main>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php'); ?>
