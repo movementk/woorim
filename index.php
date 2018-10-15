@@ -125,6 +125,41 @@
                                 </figcaption>
                             </figure>
                         </li>
+                        
+                        <li class="col-4">
+                            <figure>
+                                <img src="/assets/images/main/img_shop01.jpg" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h4>The Shilla DFS</h4>
+                                        <a href="#" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="col-4">
+                            <figure>
+                                <img src="/assets/images/main/img_shop02.jpg" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h4>The Shilla I park</h4>
+                                        <a href="#" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="col-4">
+                            <figure>
+                                <img src="/assets/images/main/img_shop03.jpg" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h4>Shinsegae DFS</h4>
+                                        <a href="#" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -151,6 +186,43 @@
                     Kumno-gil 2-50 Anseong-si <br>Kyounggi-do <br>South korea 
                 </address>
             </article>
+        </section>
+        <section class="our-brands">
+            <div class="container">
+                <h3>Our Brands</h3>
+                <div class="brand-list">
+                    <ul class="row">
+                        <li class="col-3">
+                            <a href="#">
+                                <figure>
+                                    <img src="" alt="">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="col-3">
+                            <a href="#">
+                                <figure>
+                                    <img src="" alt="">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="col-3">
+                            <a href="#">
+                                <figure>
+                                    <img src="" alt="">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="col-3">
+                            <a href="#">
+                                <figure>
+                                    <img src="" alt="">
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
@@ -190,6 +262,17 @@
             $('.visual-slider').on('init', function(event,slick){
                 setTimeout(function(){ 
                     $('.slick-active').addClass('action'); 
+                });
+            });
+            
+            
+            // shops-list slider
+            $(document).ready(function(){
+                $('.shops-list ul').slick({
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 3
                 });
             });
         })(jQuery);
