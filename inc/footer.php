@@ -27,12 +27,12 @@
             <div class="col-4">
                 <h2 class="logo">
                     <img src="/assets/images/logo_sm.png" alt="logo">
-                    <ul class="quick-list">
-                        <li><a href="#">Who we are</a></li>
-                        <li><a href="#">Local office</a></li>
-                        <li><a href="#">Inquiry</a></li>
-                    </ul>
                 </h2>
+                <ul class="quick-list">
+                    <li><a href="#">Who we are</a></li>
+                    <li><a href="#">Local office</a></li>
+                    <li><a href="#">Inquiry</a></li>
+                </ul>
             </div>
         </div>
     </div>

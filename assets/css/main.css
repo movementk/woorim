@@ -536,4 +536,47 @@ body {
     .office-info > article.warehouse {
       background-image: url(/assets/images/main/bg_office03.jpg); }
 
+.our-brands {
+  padding: 90px 0; }
+  .our-brands h3 {
+    display: inline-block;
+    font-size: 36px;
+    color: #2b2b2b;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    margin-bottom: 30px; }
+  .our-brands .brand-list {
+    position: relative; }
+    .our-brands .brand-list .slick-dots {
+      position: absolute;
+      top: -40px;
+      right: 15px; }
+      .our-brands .brand-list .slick-dots li {
+        display: inline-block;
+        margin: 0 5px; }
+        .our-brands .brand-list .slick-dots li button {
+          display: block;
+          width: 15px;
+          height: 15px;
+          padding: 0;
+          margin: 0;
+          outline: none;
+          cursor: pointer;
+          background: none;
+          border-radius: 50%;
+          border: 1px solid #bad4e3;
+          text-indent: -999999px; }
+        .our-brands .brand-list .slick-dots li:last-child {
+          margin-right: 0; }
+        .our-brands .brand-list .slick-dots li.slick-active button {
+          border-color: #588973;
+          background-color: #588973; }
+    .our-brands .brand-list ul {
+      overflow: visible; }
+      .our-brands .brand-list ul li a {
+        display: block;
+        border: 1px solid #ebebeb; }
+        .our-brands .brand-list ul li a figure img {
+          width: 100%; }
+
 /*# sourceMappingURL=main.css.map */

@@ -195,28 +195,57 @@
                         <li class="col-3">
                             <a href="#">
                                 <figure>
-                                    <img src="" alt="">
+                                    <img src="/assets/images/main/img_brand01.jpg" alt="">
                                 </figure>
                             </a>
                         </li>
                         <li class="col-3">
                             <a href="#">
                                 <figure>
-                                    <img src="" alt="">
+                                    <img src="/assets/images/main/img_brand02.jpg" alt="">
                                 </figure>
                             </a>
                         </li>
                         <li class="col-3">
                             <a href="#">
                                 <figure>
-                                    <img src="" alt="">
+                                    <img src="/assets/images/main/img_brand03.jpg" alt="">
                                 </figure>
                             </a>
                         </li>
                         <li class="col-3">
                             <a href="#">
                                 <figure>
-                                    <img src="" alt="">
+                                    <img src="/assets/images/main/img_brand04.jpg" alt="">
+                                </figure>
+                            </a>
+                        </li>
+                        
+                        <li class="col-3">
+                            <a href="#">
+                                <figure>
+                                    <img src="/assets/images/main/img_brand01.jpg" alt="">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="col-3">
+                            <a href="#">
+                                <figure>
+                                    <img src="/assets/images/main/img_brand02.jpg" alt="">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="col-3">
+                            <a href="#">
+                                <figure>
+                                    <img src="/assets/images/main/img_brand03.jpg" alt="">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="col-3">
+                            <a href="#">
+                                <figure>
+                                    <img src="/assets/images/main/img_brand04.jpg" alt="">
                                 </figure>
                             </a>
                         </li>
@@ -227,11 +256,11 @@
     </main>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php'); ?>
+    <script src="/assets/js/main.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         (function($){
-            // header scrolled event
-            /*
+            /* header scrolled event
             $(window).on('scroll', function(){
                 if( $(this).scrollTop() > 0 ){
                     $('body').addClass('scrolled');
@@ -240,41 +269,6 @@
                 }
             });
             */
-            
-            // visual slider
-            $('.visual-slider').on('init', function(){
-                $('video').each(function () {
-                    this.play();
-                });
-            });
-            $(document).ready(function(){
-                $('.visual-slider').slick({
-                    prevArrow: '<div class="control-btn btn-left"><button type="button" class="slick-prev"><i class="icon-left-open"></i></button></div>',
-                    nextArrow: '<div class="control-btn btn-right"><button type="button" class="slick-next"><i class="icon-right-open"></i></button></div>'
-                });
-            });
-            $('.visual-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-                $('.slick-slide').removeClass('action');
-                setTimeout(function (){ 
-                    $('.slick-active').addClass('action'); 
-                });
-            });
-            $('.visual-slider').on('init', function(event,slick){
-                setTimeout(function(){ 
-                    $('.slick-active').addClass('action'); 
-                });
-            });
-            
-            
-            // shops-list slider
-            $(document).ready(function(){
-                $('.shops-list ul').slick({
-                    dots: true,
-                    arrows: false,
-                    slidesToShow: 3,
-                    slidesToScroll: 3
-                });
-            });
         })(jQuery);
     </script>
 </body>
