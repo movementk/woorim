@@ -89,6 +89,10 @@
             border: 0;
             outline: none;
             background: none;
+            @include transition();
+            &:hover {
+                color: #ff7f00;
+            }
         }
         .slick-next {
             margin-left: 100px;
@@ -112,7 +116,6 @@
         article {
             float: right;
             min-width: 1300px;
-            /*display: inline-block;*/
             & ~ article {
                 position: relative;
                 margin-top: 30px;
@@ -231,7 +234,6 @@
         color: #fff;
         line-height: 30px;
         margin-top: 50px;
-        @include maven();
     }
     .btn-more {
         margin-top: 60px;
@@ -386,7 +388,6 @@
         small {
             display: block;
             font-size: 13px;
-            @include maven();
             font-weight: 500;
             margin-bottom: 20px;
             color: rgba(255, 255, 255, .5);

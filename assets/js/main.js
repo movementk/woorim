@@ -7,6 +7,8 @@
     });
     $(document).ready(function(){
         $('.visual-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 6000,
             prevArrow: '<div class="control-btn btn-left"><button type="button" class="slick-prev"><i class="icon-left-open"></i></button></div>',
             nextArrow: '<div class="control-btn btn-right"><button type="button" class="slick-next"><i class="icon-right-open"></i></button></div>'
         });

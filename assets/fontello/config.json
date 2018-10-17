@@ -53,6 +53,12 @@
       "css": "dot",
       "code": 59393,
       "src": "entypo"
+    },
+    {
+      "uid": "d80ef118949b097868584a3b80d55ce4",
+      "css": "home-circled",
+      "code": 59394,
+      "src": "elusive"
     }
   ]
 }

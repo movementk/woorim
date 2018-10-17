@@ -29,8 +29,8 @@
                     <img src="/assets/images/logo_sm.png" alt="logo">
                 </h2>
                 <ul class="quick-list">
-                    <li><a href="#">Who we are</a></li>
-                    <li><a href="#">Local office</a></li>
+                    <li><a href="/introduction/introduce.php">Who we are</a></li>
+                    <li><a href="/office/location.php">Local office</a></li>
                     <li><a href="#">Inquiry</a></li>
                 </ul>
             </div>

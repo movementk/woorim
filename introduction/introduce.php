@@ -28,6 +28,74 @@
                 <div class="section-header">
                     <h4>Mission &amp; Vision</h4>
                 </div>
+                <div class="section-content">
+                    <div class="row">
+                        <article class="col-6">
+                            <!--
+                                링크 이동이 아닐경우 a태그 제거
+                            -->
+                            <a href="#">
+                                <figure>
+                                    <img src="/assets/images/introduction/img_mission.jpg" class="img-fluid" alt="">
+                                    <figcaption>
+                                        <h5>Our Mission</h5>
+                                        <p>
+                                            Brand development to succeed in Korea's duty-free  <br>market.
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="col-6">
+                            <a href="#">
+                                <figure>
+                                    <img src="/assets/images/introduction/img_vision.jpg" class="img-fluid" alt="">
+                                    <figcaption>
+                                        <h5>Our Vision</h5>
+                                        <p>
+                                            As a specialized distributor in the Korea Duty Free market, we are growing along with the Korean Duty Free Shop.
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="history">
+            <div class="container">
+                <div class="section-header">
+                    <h4>Our history</h4>
+                </div>
+                <div class="section-content">
+                    <ol>
+                        <li>
+                            <dl>
+                                <dt>2017 <span class="circle"></span></dt>
+                                <dd>Importing Japan and Australia’s cosmetic</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2016 <span class="circle"></span></dt>
+                                <dd>Entering Duty Free business</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2012 <span class="circle"></span></dt>
+                                <dd>Importing food business</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>2011 <span class="circle"></span></dt>
+                                <dd>Established</dd>
+                            </dl>
+                        </li>
+                    </ol>
+                </div>
             </div>
         </section>
     </main>

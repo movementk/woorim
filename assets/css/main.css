@@ -234,7 +234,17 @@ body {
       padding: 0;
       border: 0;
       outline: none;
-      background: none; }
+      background: none;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.15s;
+      transition-duration: 0.15s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s; }
+      .jumbotron .control-btn button:hover {
+        color: #ff7f00; }
     .jumbotron .control-btn .slick-next {
       margin-left: 100px; }
 
@@ -252,8 +262,7 @@ body {
         width: 1400px !important; } }
     .special-agent .container-fluid article {
       float: right;
-      min-width: 1300px;
-      /*display: inline-block;*/ }
+      min-width: 1300px; }
       .special-agent .container-fluid article ~ article {
         position: relative;
         margin-top: 30px;
@@ -364,8 +373,7 @@ body {
     font-size: 18px;
     color: #fff;
     line-height: 30px;
-    margin-top: 50px;
-    font-family: 'Maven Pro', sans-serif; }
+    margin-top: 50px; }
   .brand-value .btn-more {
     margin-top: 60px; }
     .brand-value .btn-more .btn-default {
@@ -509,7 +517,6 @@ body {
     .office-info > article small {
       display: block;
       font-size: 13px;
-      font-family: 'Maven Pro', sans-serif;
       font-weight: 500;
       margin-bottom: 20px;
       color: rgba(255, 255, 255, 0.5); }

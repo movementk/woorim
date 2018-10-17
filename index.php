@@ -65,9 +65,9 @@
                             and is expanding and growing with our valuable partners.
                         </p>
                         <ul>
-                            <li><a href="#">Our mission <span></span></a></li>
-                            <li><a href="#">Our vision <span></span></a></li>
-                            <li><a href="#">Our history <span></span></a></li>
+                            <li><a href="/introduction/introduce.php">Our mission <span></span></a></li>
+                            <li><a href="/introduction/introduce.php">Our vision <span></span></a></li>
+                            <li><a href="/introduction/introduce.php">Our history <span></span></a></li>
                         </ul>
                     </div>
                 </article>
@@ -98,7 +98,7 @@
                                 <figcaption>
                                     <div>
                                         <h4>The Shilla DFS</h4>
-                                        <a href="#" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
+                                        <a href="/shop/shop_list.php" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -109,7 +109,7 @@
                                 <figcaption>
                                     <div>
                                         <h4>The Shilla I park</h4>
-                                        <a href="#" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
+                                        <a href="/shop/shop_list.php" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -120,7 +120,7 @@
                                 <figcaption>
                                     <div>
                                         <h4>Shinsegae DFS</h4>
-                                        <a href="#" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
+                                        <a href="/shop/shop_list.php" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
                                     </div>
                                 </figcaption>
                             </figure>
