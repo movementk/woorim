@@ -93,37 +93,37 @@
                 <div class="shops-list">
                     <ul class="row">
                         <li class="col-4">
-                            <figure>
+                            <div class="item">
                                 <img src="/assets/images/main/img_shop01.jpg" alt="">
-                                <figcaption>
-                                    <div>
-                                        <h4>The Shilla DFS</h4>
-                                        <a href="/shop/shop_list.php" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
-                                    </div>
-                                </figcaption>
-                            </figure>
+                            </div>
+                            <div class="details">
+                                <div>
+                                    <h4>The Shilla DFS</h4>
+                                    <a href="/shop/shop_list.php" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="col-4">
-                            <figure>
+                            <div class="item">
                                 <img src="/assets/images/main/img_shop02.jpg" alt="">
-                                <figcaption>
-                                    <div>
-                                        <h4>The Shilla I park</h4>
-                                        <a href="/shop/shop_list.php" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
-                                    </div>
-                                </figcaption>
-                            </figure>
+                            </div>
+                            <div class="details">
+                                <div>
+                                    <h4>The Shilla I park</h4>
+                                    <a href="/shop/shop_list.php" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="col-4">
-                            <figure>
+                            <div class="item">
                                 <img src="/assets/images/main/img_shop03.jpg" alt="">
-                                <figcaption>
-                                    <div>
-                                        <h4>Shinsegae DFS</h4>
-                                        <a href="/shop/shop_list.php" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
-                                    </div>
-                                </figcaption>
-                            </figure>
+                            </div>
+                            <div class="details">
+                                <div>
+                                    <h4>Shinsegae DFS</h4>
+                                    <a href="/shop/shop_list.php" class="btn btn-default" data-item="Detail view" role="button">Detail view</a>
+                                </div>
+                            </div>
                         </li>
                         
                         <li class="col-4">

@@ -215,6 +215,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+    background-attachment: fixed;
     h3 {
         font-size: 36px;
         color: #fff;
@@ -316,6 +317,60 @@
             overflow: visible;
             li {
                 outline: none;
+                .item {
+                    overflow: hidden;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        transform: scale(1);
+                        -webki-transform: scale(1);
+                        @include transition($duration: .5s);
+                    }
+                }
+                .details {
+                    position: relative;
+                    display: block;
+                    padding: 0 60px 0 30px;
+                    > div {
+                        position: relative;
+                        z-index: 1;
+                        padding: 25px 20px;
+                        width: 100%;
+                        margin-top: -35px;
+                        background-color: #fff;
+                        h4 {
+                            font-size: 20px;
+                            color: #2b2b2b;
+                            font-weight: 500;
+                            @include lora();
+                        }
+                        .btn-default {
+                            position: relative;
+                            font-size: 13px;
+                            color: #bbb;
+                            font-weight: 400;
+                            font-style: italic;
+                            letter-spacing: .5px;
+                            margin-top: 10px;
+                            @include ptserif();
+                            &:before {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                overflow: hidden;
+                                width: 0;
+                                content: attr(data-item);
+                                @include transition($duration: .20s);
+                            }
+                            &:hover {
+                                &:before {
+                                    width: 100%;
+                                    color: #fe4d00;
+                                }
+                            }
+                        }
+                    }
+                }
                 figure {
                     img {
                         width: 100%;
@@ -348,6 +403,8 @@
                                 @include ptserif();
                                 &:before {
                                     position: absolute;
+                                    top: 0;
+                                    left: 0;
                                     overflow: hidden;
                                     width: 0;
                                     content: attr(data-item);
@@ -360,6 +417,14 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+                &:hover {
+                    .item {
+                        img {
+                            transform: scale(1.1);
+                            -webki-transform: scale(1.1);
                         }
                     }
                 }
@@ -407,6 +472,9 @@
         }
         &.seoul {
             background-image: url(/assets/images/main/bg_office01.jpg);
+            &:hover {
+                
+            }
         }
         &.japan {
             color: #2b2b2b;

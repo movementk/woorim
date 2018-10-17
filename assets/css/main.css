@@ -356,7 +356,8 @@ body {
   background-image: url(/assets/images/main/bg_brand_value.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .brand-value h3 {
     font-size: 36px;
     color: #fff;
@@ -454,6 +455,64 @@ body {
       overflow: visible; }
       .our-shops .shops-list ul li {
         outline: none; }
+        .our-shops .shops-list ul li .item {
+          overflow: hidden;
+          position: relative; }
+          .our-shops .shops-list ul li .item img {
+            width: 100%;
+            transform: scale(1);
+            -webki-transform: scale(1);
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s; }
+        .our-shops .shops-list ul li .details {
+          position: relative;
+          display: block;
+          padding: 0 60px 0 30px; }
+          .our-shops .shops-list ul li .details > div {
+            position: relative;
+            z-index: 1;
+            padding: 25px 20px;
+            width: 100%;
+            margin-top: -35px;
+            background-color: #fff; }
+            .our-shops .shops-list ul li .details > div h4 {
+              font-size: 20px;
+              color: #2b2b2b;
+              font-weight: 500;
+              font-family: 'Lora', serif; }
+            .our-shops .shops-list ul li .details > div .btn-default {
+              position: relative;
+              font-size: 13px;
+              color: #bbb;
+              font-weight: 400;
+              font-style: italic;
+              letter-spacing: .5px;
+              margin-top: 10px;
+              font-family: 'PT Serif', serif; }
+              .our-shops .shops-list ul li .details > div .btn-default:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+                width: 0;
+                content: attr(data-item);
+                -webkit-transition-property: all;
+                transition-property: all;
+                -webkit-transition-duration: 0.2s;
+                transition-duration: 0.2s;
+                -webkit-transition-timing-function: linear;
+                transition-timing-function: linear;
+                -webkit-transition-delay: 0s;
+                transition-delay: 0s; }
+              .our-shops .shops-list ul li .details > div .btn-default:hover:before {
+                width: 100%;
+                color: #fe4d00; }
         .our-shops .shops-list ul li figure img {
           width: 100%; }
         .our-shops .shops-list ul li figure figcaption {
@@ -483,6 +542,8 @@ body {
               font-family: 'PT Serif', serif; }
               .our-shops .shops-list ul li figure figcaption > div .btn-default:before {
                 position: absolute;
+                top: 0;
+                left: 0;
                 overflow: hidden;
                 width: 0;
                 content: attr(data-item);
@@ -497,6 +558,9 @@ body {
               .our-shops .shops-list ul li figure figcaption > div .btn-default:hover:before {
                 width: 100%;
                 color: #fe4d00; }
+        .our-shops .shops-list ul li:hover .item img {
+          transform: scale(1.1);
+          -webki-transform: scale(1.1); }
 
 .office-info {
   display: table;
