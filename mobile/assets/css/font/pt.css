@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Serif Italic'), local('PTSerif-Italic'), url(/assets/css/font/pt/EJRTQgYoZZY2vCFuvAFT_r21dA.woff) format('woff');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Serif'), local('PTSerif-Regular'), url(/assets/css/font/pt/EJRVQgYoZZY2vCFuvAFWzrk.woff) format('woff');
+}

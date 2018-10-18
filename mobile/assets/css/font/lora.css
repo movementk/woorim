@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora Regular'), local('Lora-Regular'), url(/assets/css/font/lora/0QIvMX1D_JOuMwr7JQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lora Bold'), local('Lora-Bold'), url(/assets/css/font/lora/0QIgMX1D_JOuO7HeNtxunA.woff) format('woff');
+}

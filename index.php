@@ -83,7 +83,7 @@
                     Woorim Trade has been operating brands that can succeed in Korea's duty free market <br>based on its brand value and philosophy.
                 </p>
                 <div class="btn-more">
-                    <a href="#" class="btn btn-default" role="button">Detail view <span></span></a>
+                    <a href="/business/work.php" class="btn btn-default" role="button">Detail view <span></span></a>
                 </div>
             </div>
         </section>
