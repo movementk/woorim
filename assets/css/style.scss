@@ -28,6 +28,10 @@ section {
         background-position: 50% 50%;
         background-size: cover;
         small {
+            position: relative;
+            opacity: 0;
+            top: -50px;
+            @include transition($duration: .8s, $delay: .3s);
             font-size: 23px;
             color: #000;
             font-weight: 500;
@@ -35,6 +39,10 @@ section {
             margin-bottom: 30px;
         }
         h3 {
+            position: relative;
+            opacity: 0;
+            top: -50px;
+            @include transition($duration: .8s, $delay: .6s);
             font-size: 46px;
             color: #000;
             line-height: 58px;
@@ -42,6 +50,10 @@ section {
             @include lora();
         }
         .summary {
+            position: relative;
+            opacity: 0;
+            top: -50px;
+            @include transition($duration: .8s, $delay: .9s);
             font-size: 19px;
             color: #000;
             font-weight: 400;
@@ -50,12 +62,19 @@ section {
         }
         .slogan {
             position: absolute;
-            bottom: -101px;
+            bottom: -201px;
             right: 0;
+            opacity: 0;
             width: 60%;
+            height: 202px;
             padding: 50px;
             background-color: rgba(39, 77, 95, .95);
+            @include transition($duration: .8s, $delay: 1.2s);
             > p {
+                position: relative;
+                opacity: 0;
+                right: -50px;
+                @include transition($duration: .8s, $delay: 1.5s);
                 font-size: 20px;
                 color: #fff;
                 font-weight: 400;
@@ -64,32 +83,73 @@ section {
                 @include lora();
             }
         }
+        &.action {
+            small {
+                top: 0;
+                opacity: 1;
+            }
+            h3 {
+                top: 0;
+                opacity: 1;
+            }
+            .summary {
+                top: 0;
+                opacity: 1;
+            }
+            .slogan {
+                bottom: -101px;
+                opacity: 1;
+                > p {
+                    right: 0;
+                    opacity: 1;
+                }
+            }
+        }
     }
     .mission-vision {
         padding: 160px 0 100px;
         background-color: #ecedef;
         .section-content {
             article {
+                .item-img {
+                    overflow: hidden;
+                    figure {
+                        transform: scale(1);
+                        -webkit-transform: scale(1);
+                        @include transition($duration: .5s);
+                        .img-fliud {
+                            width: 100%;
+                        }
+                    }
+                }
+                .details {
+                    display: block;
+                    padding: 40px;
+                    background-color: #f7f7f7;
+                    h5 {
+                        font-size: 22px;
+                        color: #2b2b2b;
+                        @include lora();
+                    }
+                    p {
+                        font-size: 18px;
+                        color: #666;
+                        line-height: 30px;
+                        font-weight: 400;
+                        margin-top: 30px;  
+                        letter-spacing: -.5px;
+                    }
+                }
                 figure {
                     .img-fluid {
                         width: 100%;
                     }
-                    figcaption {
-                        display: block;
-                        padding: 40px;
-                        background-color: #f7f7f7;
-                        h5 {
-                            font-size: 22px;
-                            color: #2b2b2b;
-                            @include lora();
-                        }
-                        p {
-                            font-size: 18px;
-                            color: #666;
-                            line-height: 30px;
-                            font-weight: 400;
-                            margin-top: 30px;  
-                            letter-spacing: -.5px;
+                }
+                &:hover {
+                    .item-img {
+                        figure {
+                            transform: scale(1.1);
+                            -webkit-transform: scale(1.1);
                         }
                     }
                 }
@@ -165,14 +225,27 @@ section {
 .work {
     .page-header {
         position: relative;
+        overflow: hidden;
+        figure {
+            position: relative;
+            left: -50px;
+            opacity: 0;
+            @include transition($duration: .8s, $delay: .5s);
+        }
         .slogan {
             position: absolute;
             top: 90px;
-            right: 0;
+            right: -50px;
             width: 55%;
             padding: 100px;
             background-color: rgba(244, 244, 244, .85);
+            opacity: 0;
+            @include transition($duration: .8s, $delay: .5s);
             small {
+                position: relative;
+                top: -50px;
+                opacity: 0;
+                @include transition($duration: .8s, $delay: 1.4s);
                 font-size: 23px;
                 color: #000;
                 font-weight: 500;
@@ -180,6 +253,10 @@ section {
                 margin-bottom: 30px;
             }
             h3 {
+                position: relative;
+                top: -50px;
+                opacity: 0;
+                @include transition($duration: .8s, $delay: 1.8s);
                 font-size: 46px;
                 color: #000;
                 line-height: 58px;
@@ -187,11 +264,37 @@ section {
                 @include lora();
             }
             p {
+                position: relative;
+                top: -50px;
+                opacity: 0;
+                @include transition($duration: .8s, $delay: 2.2s);
                 font-size: 19px;
                 color: #000;
                 font-weight: 400;
                 line-height: 30px;
                 margin-top: 70px;
+            }
+        }
+        &.action {
+            figure {
+                left: 0;
+                opacity: 1;
+            }
+            .slogan {
+                right: 0;
+                opacity: 1;
+                small {
+                    top: 0;
+                    opacity: 1;
+                }
+                h3 {
+                    top: 0;
+                    opacity: 1;
+                }
+                p {
+                    top: 0;
+                    opacity: 1;
+                }
             }
         }
     }
@@ -333,6 +436,7 @@ section {
                 position: relative;
                 display: table;
                 width: auto;
+                height: 100%;
                 padding: 0;
                 .close {
                     position: absolute;
@@ -356,10 +460,12 @@ section {
                 }
                 figure {
                     display: table-cell;
+                    height: 100%;
                 }
                 .details {
                     position: relative;
                     display: table-cell;
+                    height: 100%;
                     padding: 80px 50px 50px;
                     width: 420px;
                     vertical-align: top;
@@ -482,27 +588,38 @@ section {
             margin-top: 60px;
             > ul {
                 > li {
-                    figure {
-                        img {
-                            width: 100%;
-                        }
-                        figcaption {
-                            position: relative;
-                            display: block;
-                            width: 70%;
-                            font-size: 18px;
-                            color: #2b2b2b;
-                            font-weight: 400;
-                            padding: 20px;
-                            text-align: left;
-                            @include lora();
-                            margin-top: -33px;
-                            background-color: #fff;
+                    .item-img {
+                        overflow: hidden;
+                        figure {
+                            transform: scale(1);
+                            -webkit-transform: scale(1);
+                            @include transition($duration: .5s)
                         }
                     }
+                    .details {
+                        position: relative;
+                        display: block;
+                        width: 70%;
+                        font-size: 18px;
+                        color: #2b2b2b;
+                        font-weight: 400;
+                        padding: 20px;
+                        text-align: left;
+                        @include lora();
+                        margin-top: -33px;
+                        background-color: #fff;
+                    }
                     &:nth-of-type(3) ~ li {
-                        figure {
+                        .item-img {
                             margin-top: 55px;
+                        }
+                    }
+                    &:hover {
+                        .item-img {
+                            figure {
+                                transform: scale(1.1);
+                                -webkit-transform: scale(1.1);
+                            }
                         }
                     }
                 }
@@ -652,7 +769,6 @@ section {
         .maps {
             overflow: hidden;
             height: 450px;
-            padding: 0 5%;
             background-color: #f1f2f4;
             img {
                 width: auto;

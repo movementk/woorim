@@ -65,5 +65,12 @@
     </main>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php'); ?>
+    <script>
+        (function($){
+            setTimeout(function(){
+                $('.page-header').addClass('action');
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>

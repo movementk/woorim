@@ -25,60 +25,78 @@
                     <article class="list">
                         <ul class="row">
                             <li class="col-4">
-                                <figure>
-                                    <img src="/assets/images/shop/img_shop01.jpg" alt="">
-                                    <figcaption>The Shilla DFS</figcaption>
-                                </figure>
+                                <div class="item-img">
+                                    <figure>
+                                        <img src="/assets/images/shop/img_shop01.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="details">The Shilla DFS</div>
                             </li>
                             <li class="col-4">
-                                <figure>
-                                    <img src="/assets/images/shop/img_shop02.jpg" alt="">
-                                    <figcaption>The Shilla I park</figcaption>
-                                </figure>
+                                <div class="item-img">
+                                    <figure>
+                                        <img src="/assets/images/shop/img_shop02.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="details">The Shilla I park</div>
                             </li>
                             <li class="col-4">
-                                <figure>
-                                    <img src="/assets/images/shop/img_shop03.jpg" alt="">
-                                    <figcaption>Shinsegae DFS</figcaption>
-                                </figure>
-                            </li>
-                            
-                            <li class="col-4">
-                                <figure>
-                                    <img src="/assets/images/shop/img_none_shop.jpg" alt="">
-                                    <figcaption>The Shilla DFS</figcaption>
-                                </figure>
-                            </li>
-                            <li class="col-4">
-                                <figure>
-                                    <img src="/assets/images/shop/img_none_shop.jpg" alt="">
-                                    <figcaption>The Shilla I park</figcaption>
-                                </figure>
-                            </li>
-                            <li class="col-4">
-                                <figure>
-                                    <img src="/assets/images/shop/img_none_shop.jpg" alt="">
-                                    <figcaption>Shinsegae DFS</figcaption>
-                                </figure>
+                                <div class="item-img">
+                                    <figure>
+                                        <img src="/assets/images/shop/img_shop03.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="details">Shinsegae DFS</div>
                             </li>
                             
                             <li class="col-4">
-                                <figure>
-                                    <img src="/assets/images/shop/img_none_shop.jpg" alt="">
-                                    <figcaption>The Shilla DFS</figcaption>
-                                </figure>
+                                <div class="item-img">
+                                    <figure>
+                                        <img src="/assets/images/shop/img_none_shop.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="details">The Shilla DFS</div>
                             </li>
                             <li class="col-4">
-                                <figure>
-                                    <img src="/assets/images/shop/img_none_shop.jpg" alt="">
-                                    <figcaption>The Shilla I park</figcaption>
-                                </figure>
+                                <div class="item-img">
+                                    <figure>
+                                        <img src="/assets/images/shop/img_none_shop.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="details">The Shilla I park</div>
                             </li>
                             <li class="col-4">
-                                <figure>
-                                    <img src="/assets/images/shop/img_none_shop.jpg" alt="">
-                                    <figcaption>Shinsegae DFS</figcaption>
-                                </figure>
+                                <div class="item-img">
+                                    <figure>
+                                        <img src="/assets/images/shop/img_none_shop.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="details">Shinsegae DFS</div>
+                            </li>
+                            
+                            <li class="col-4">
+                                <div class="item-img">
+                                    <figure>
+                                        <img src="/assets/images/shop/img_none_shop.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="details">The Shilla DFS</div>
+                            </li>
+                            <li class="col-4">
+                                <div class="item-img">
+                                    <figure>
+                                        <img src="/assets/images/shop/img_none_shop.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="details">The Shilla I park</div>
+                            </li>
+                            <li class="col-4">
+                                <div class="item-img">
+                                    <figure>
+                                        <img src="/assets/images/shop/img_none_shop.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="details">Shinsegae DFS</div>
                             </li>
                         </ul>
                     </article>

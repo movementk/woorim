@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&subset=korean");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
-@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
-@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,400i");
+@import url(/assets/css/font/lora.css);
+@import url("/assets/css/font/pt.css");
 /* 초기화 */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -261,15 +261,16 @@ body {
         overflow: auto;
         width: 1400px !important; } }
     .special-agent .container-fluid article {
+      overflow: hidden;
       float: right;
       min-width: 1300px; }
+      @media (min-width: 1400px) {
+        .special-agent .container-fluid article {
+          display: inline-block; } }
       .special-agent .container-fluid article ~ article {
         position: relative;
         margin-top: 30px;
         min-width: 1210px; }
-      @media (min-width: 1400px) {
-        .special-agent .container-fluid article {
-          display: inline-block; } }
       .special-agent .container-fluid article figure {
         float: left; }
       .special-agent .container-fluid article .details {
@@ -299,20 +300,37 @@ body {
           font-weight: 300;
           line-height: 30px;
           margin-top: -40px; }
-        .special-agent .container-fluid article .details ul {
-          position: absolute;
-          bottom: 10px; }
-          .special-agent .container-fluid article .details ul li a {
-            position: relative;
-            display: inline-block;
-            width: 130px;
-            font-size: 16px;
-            color: #bbb;
-            font-style: italic;
-            font-weight: 400;
-            line-height: 40px;
-            letter-spacing: 1px;
-            font-family: 'PT Serif', serif;
+        .special-agent .container-fluid article .details ul li a {
+          position: relative;
+          display: inline-block;
+          width: 130px;
+          font-size: 16px;
+          color: #bbb;
+          font-style: italic;
+          font-weight: 400;
+          line-height: 40px;
+          letter-spacing: 1px;
+          font-family: 'PT Serif', serif;
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s; }
+          .special-agent .container-fluid article .details ul li a:after {
+            font-family: "fontello";
+            content: "\E800";
+            float: right;
+            font-style: normal; }
+          .special-agent .container-fluid article .details ul li a span {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 1px;
+            background-color: #fe4d00;
             -webkit-transition-property: all;
             transition-property: all;
             -webkit-transition-duration: 0.15s;
@@ -321,34 +339,112 @@ body {
             transition-timing-function: linear;
             -webkit-transition-delay: 0s;
             transition-delay: 0s; }
-            .special-agent .container-fluid article .details ul li a:after {
-              font-family: "fontello";
-              content: "\E800";
-              float: right;
-              font-style: normal; }
-            .special-agent .container-fluid article .details ul li a span {
-              position: absolute;
-              bottom: 0;
-              left: 50%;
-              width: 0;
-              height: 1px;
-              background-color: #fe4d00;
-              -webkit-transition-property: all;
-              transition-property: all;
-              -webkit-transition-duration: 0.15s;
-              transition-duration: 0.15s;
-              -webkit-transition-timing-function: linear;
-              transition-timing-function: linear;
-              -webkit-transition-delay: 0s;
-              transition-delay: 0s; }
-            .special-agent .container-fluid article .details ul li a:hover {
-              color: #fe4d00; }
-              .special-agent .container-fluid article .details ul li a:hover span {
-                width: 100%;
-                margin-left: -50%; }
+          .special-agent .container-fluid article .details ul li a:hover {
+            color: #fe4d00; }
+            .special-agent .container-fluid article .details ul li a:hover span {
+              width: 100%;
+              margin-left: -50%; }
       .special-agent .container-fluid article:first-child {
         position: relative;
         z-index: 1; }
+      .special-agent .container-fluid article.slogan figure {
+        position: relative;
+        opacity: 0;
+        left: -100px;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0.3s;
+        transition-delay: 0.3s; }
+      .special-agent .container-fluid article.slogan .details small {
+        position: relative;
+        right: -50px;
+        opacity: 0;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0.9s;
+        transition-delay: 0.9s; }
+      .special-agent .container-fluid article.slogan .details h3 {
+        position: relative;
+        right: -50px;
+        opacity: 0;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 1.5s;
+        transition-delay: 1.5s; }
+      .special-agent .container-fluid article.slogan.on figure {
+        left: 0;
+        opacity: 1; }
+      .special-agent .container-fluid article.slogan.on .details small {
+        right: 0;
+        opacity: 1; }
+      .special-agent .container-fluid article.slogan.on .details h3 {
+        right: 0;
+        opacity: 1; }
+      .special-agent .container-fluid article.summary {
+        overflow: visible; }
+        .special-agent .container-fluid article.summary figure {
+          position: relative;
+          opacity: 0;
+          right: -100px;
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s; }
+        .special-agent .container-fluid article.summary .details {
+          position: relative; }
+          .special-agent .container-fluid article.summary .details p {
+            left: -50px;
+            width: 100%;
+            opacity: 0;
+            z-index: 2;
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 0.9s;
+            transition-delay: 0.9s; }
+          .special-agent .container-fluid article.summary .details ul {
+            position: relative;
+            left: -50px;
+            margin-top: 40px;
+            opacity: 0;
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 1.5s;
+            transition-delay: 1.5s; }
+        .special-agent .container-fluid article.summary.on {
+          overflow: visible; }
+          .special-agent .container-fluid article.summary.on figure {
+            right: 0 !important;
+            opacity: 1; }
+          .special-agent .container-fluid article.summary.on .details p {
+            left: 0;
+            opacity: 1; }
+          .special-agent .container-fluid article.summary.on .details ul {
+            left: 0;
+            opacity: 1; }
 
 .brand-value {
   text-align: center;
@@ -484,7 +580,7 @@ body {
             .our-shops .shops-list ul li .details > div h4 {
               font-size: 20px;
               color: #2b2b2b;
-              font-weight: 500;
+              font-weight: 400;
               font-family: 'Lora', serif; }
             .our-shops .shops-list ul li .details > div .btn-default {
               position: relative;
@@ -566,45 +662,71 @@ body {
   display: table;
   table-layout: fixed;
   width: 100%;
+  height: 450px;
   min-width: 1200px; }
   .office-info > article {
+    position: relative;
+    overflow: hidden;
     display: table-cell;
     width: 33.33%;
     height: 450px;
     color: #fff;
     vertical-align: top;
     text-align: left;
-    padding: 60px 55px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover; }
-    .office-info > article small {
-      display: block;
-      font-size: 13px;
-      font-weight: 500;
-      margin-bottom: 20px;
-      color: rgba(255, 255, 255, 0.5); }
-    .office-info > article h3 {
-      font-size: 30px;
-      font-weight: 400;
-      letter-spacing: 1px;
-      font-family: 'Lora', serif;
-      margin-bottom: 40px; }
-    .office-info > article address {
-      display: block;
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 26px; }
-    .office-info > article.seoul {
+    padding: 60px 55px; }
+    .office-info > article .backdrop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 450px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+      transform: scale(1);
+      -webkit-transform: scale(1); }
+    .office-info > article:hover .backdrop {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1); }
+    .office-info > article .details {
+      position: relative;
+      z-index: 1; }
+      .office-info > article .details small {
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: rgba(255, 255, 255, 0.5); }
+      .office-info > article .details h3 {
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-family: 'Lora', serif;
+        margin-bottom: 40px; }
+      .office-info > article .details address {
+        display: block;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 26px; }
+    .office-info > article.seoul .backdrop {
       background-image: url(/assets/images/main/bg_office01.jpg); }
     .office-info > article.japan {
-      color: #2b2b2b;
-      background-image: url(/assets/images/main/bg_office02.jpg); }
+      color: #2b2b2b; }
+      .office-info > article.japan .backdrop {
+        background-image: url(/assets/images/main/bg_office02.jpg); }
       .office-info > article.japan small {
         color: rgba(43, 43, 43, 0.5); }
       .office-info > article.japan address {
         color: #333; }
-    .office-info > article.warehouse {
+    .office-info > article.warehouse .backdrop {
       background-image: url(/assets/images/main/bg_office03.jpg); }
 
 .our-brands {

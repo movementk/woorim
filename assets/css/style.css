@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&subset=korean");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
-@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
-@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,400i");
+@import url(/assets/css/font/lora.css);
+@import url("/assets/css/font/pt.css");
 /* 초기화 */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -178,18 +178,51 @@ section {
   background-position: 50% 50%;
   background-size: cover; }
   .introduce .page-header small {
+    position: relative;
+    opacity: 0;
+    top: -50px;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
     font-size: 23px;
     color: #000;
     font-weight: 500;
     display: block;
     margin-bottom: 30px; }
   .introduce .page-header h3 {
+    position: relative;
+    opacity: 0;
+    top: -50px;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
     font-size: 46px;
     color: #000;
     line-height: 58px;
     font-weight: 500;
     font-family: 'Lora', serif; }
   .introduce .page-header .summary {
+    position: relative;
+    opacity: 0;
+    top: -50px;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0.9s;
+    transition-delay: 0.9s;
     font-size: 19px;
     color: #000;
     font-weight: 400;
@@ -197,38 +230,92 @@ section {
     margin-top: 70px; }
   .introduce .page-header .slogan {
     position: absolute;
-    bottom: -101px;
+    bottom: -201px;
     right: 0;
+    opacity: 0;
     width: 60%;
+    height: 202px;
     padding: 50px;
-    background-color: rgba(39, 77, 95, 0.95); }
+    background-color: rgba(39, 77, 95, 0.95);
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 1.2s;
+    transition-delay: 1.2s; }
     .introduce .page-header .slogan > p {
+      position: relative;
+      opacity: 0;
+      right: -50px;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.8s;
+      transition-duration: 0.8s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 1.5s;
+      transition-delay: 1.5s;
       font-size: 20px;
       color: #fff;
       font-weight: 400;
       line-height: 34px;
       text-align: left;
       font-family: 'Lora', serif; }
+  .introduce .page-header.action small {
+    top: 0;
+    opacity: 1; }
+  .introduce .page-header.action h3 {
+    top: 0;
+    opacity: 1; }
+  .introduce .page-header.action .summary {
+    top: 0;
+    opacity: 1; }
+  .introduce .page-header.action .slogan {
+    bottom: -101px;
+    opacity: 1; }
+    .introduce .page-header.action .slogan > p {
+      right: 0;
+      opacity: 1; }
 .introduce .mission-vision {
   padding: 160px 0 100px;
   background-color: #ecedef; }
-  .introduce .mission-vision .section-content article figure .img-fluid {
-    width: 100%; }
-  .introduce .mission-vision .section-content article figure figcaption {
+  .introduce .mission-vision .section-content article .item-img {
+    overflow: hidden; }
+    .introduce .mission-vision .section-content article .item-img figure {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s; }
+      .introduce .mission-vision .section-content article .item-img figure .img-fliud {
+        width: 100%; }
+  .introduce .mission-vision .section-content article .details {
     display: block;
     padding: 40px;
     background-color: #f7f7f7; }
-    .introduce .mission-vision .section-content article figure figcaption h5 {
+    .introduce .mission-vision .section-content article .details h5 {
       font-size: 22px;
       color: #2b2b2b;
       font-family: 'Lora', serif; }
-    .introduce .mission-vision .section-content article figure figcaption p {
+    .introduce .mission-vision .section-content article .details p {
       font-size: 18px;
       color: #666;
       line-height: 30px;
       font-weight: 400;
       margin-top: 30px;
       letter-spacing: -.5px; }
+  .introduce .mission-vision .section-content article figure .img-fluid {
+    width: 100%; }
+  .introduce .mission-vision .section-content article:hover .item-img figure {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1); }
 .introduce .history .section-content ol li ~ li {
   margin-top: 20px; }
 .introduce .history .section-content ol li dl {
@@ -274,32 +361,102 @@ section {
   background-color: #588973; }
 
 .work .page-header {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+  .work .page-header figure {
+    position: relative;
+    left: -50px;
+    opacity: 0;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s; }
   .work .page-header .slogan {
     position: absolute;
     top: 90px;
-    right: 0;
+    right: -50px;
     width: 55%;
     padding: 100px;
-    background-color: rgba(244, 244, 244, 0.85); }
+    background-color: rgba(244, 244, 244, 0.85);
+    opacity: 0;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s; }
     .work .page-header .slogan small {
+      position: relative;
+      top: -50px;
+      opacity: 0;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.8s;
+      transition-duration: 0.8s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 1.4s;
+      transition-delay: 1.4s;
       font-size: 23px;
       color: #000;
       font-weight: 500;
       display: block;
       margin-bottom: 30px; }
     .work .page-header .slogan h3 {
+      position: relative;
+      top: -50px;
+      opacity: 0;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.8s;
+      transition-duration: 0.8s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 1.8s;
+      transition-delay: 1.8s;
       font-size: 46px;
       color: #000;
       line-height: 58px;
       font-weight: 500;
       font-family: 'Lora', serif; }
     .work .page-header .slogan p {
+      position: relative;
+      top: -50px;
+      opacity: 0;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.8s;
+      transition-duration: 0.8s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 2.2s;
+      transition-delay: 2.2s;
       font-size: 19px;
       color: #000;
       font-weight: 400;
       line-height: 30px;
       margin-top: 70px; }
+  .work .page-header.action figure {
+    left: 0;
+    opacity: 1; }
+  .work .page-header.action .slogan {
+    right: 0;
+    opacity: 1; }
+    .work .page-header.action .slogan small {
+      top: 0;
+      opacity: 1; }
+    .work .page-header.action .slogan h3 {
+      top: 0;
+      opacity: 1; }
+    .work .page-header.action .slogan p {
+      top: 0;
+      opacity: 1; }
 .work .process .section-content ul li {
   position: relative;
   text-align: center; }
@@ -390,6 +547,7 @@ section {
         position: relative;
         display: table;
         width: auto;
+        height: 100%;
         padding: 0; }
         #brand-popup .modal-dialog .modal-content .modal-body .close {
           position: absolute;
@@ -409,10 +567,12 @@ section {
             display: block;
             margin: 0 auto; }
         #brand-popup .modal-dialog .modal-content .modal-body figure {
-          display: table-cell; }
+          display: table-cell;
+          height: 100%; }
         #brand-popup .modal-dialog .modal-content .modal-body .details {
           position: relative;
           display: table-cell;
+          height: 100%;
           padding: 80px 50px 50px;
           width: 420px;
           vertical-align: top;
@@ -516,9 +676,20 @@ section {
           opacity: 1; }
     .shop-list .section-content article {
       margin-top: 60px; }
-      .shop-list .section-content article > ul > li figure img {
-        width: 100%; }
-      .shop-list .section-content article > ul > li figure figcaption {
+      .shop-list .section-content article > ul > li .item-img {
+        overflow: hidden; }
+        .shop-list .section-content article > ul > li .item-img figure {
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s; }
+      .shop-list .section-content article > ul > li .details {
         position: relative;
         display: block;
         width: 70%;
@@ -530,8 +701,11 @@ section {
         font-family: 'Lora', serif;
         margin-top: -33px;
         background-color: #fff; }
-      .shop-list .section-content article > ul > li:nth-of-type(3) ~ li figure {
+      .shop-list .section-content article > ul > li:nth-of-type(3) ~ li .item-img {
         margin-top: 55px; }
+      .shop-list .section-content article > ul > li:hover .item-img figure {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1); }
 
 .location section {
   padding: 0; }
@@ -625,7 +799,6 @@ section {
   .location section .maps {
     overflow: hidden;
     height: 450px;
-    padding: 0 5%;
     background-color: #f1f2f4; }
     .location section .maps img {
       width: auto;

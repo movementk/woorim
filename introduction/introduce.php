@@ -31,33 +31,30 @@
                 <div class="section-content">
                     <div class="row">
                         <article class="col-6">
-                            <!--
-                                링크 이동이 아닐경우 a태그 제거
-                            -->
-                            <a href="#">
+                            <div class="item-img">
                                 <figure>
                                     <img src="/assets/images/introduction/img_mission.jpg" class="img-fluid" alt="">
-                                    <figcaption>
-                                        <h5>Our Mission</h5>
-                                        <p>
-                                            Brand development to succeed in Korea's duty-free  <br>market.
-                                        </p>
-                                    </figcaption>
                                 </figure>
-                            </a>
+                            </div>
+                            <div class="details">
+                                <h5>Our Mission</h5>
+                                <p>
+                                    Brand development to succeed in Korea's duty-free  <br>market.
+                                </p>
+                            </div>
                         </article>
                         <article class="col-6">
-                            <a href="#">
+                            <div class="item-img">
                                 <figure>
                                     <img src="/assets/images/introduction/img_vision.jpg" class="img-fluid" alt="">
-                                    <figcaption>
-                                        <h5>Our Vision</h5>
-                                        <p>
-                                            As a specialized distributor in the Korea Duty Free market, we are growing along with the Korean Duty Free Shop.
-                                        </p>
-                                    </figcaption>
                                 </figure>
-                            </a>
+                            </div>
+                            <div class="details">
+                                <h5>Our Vision</h5>
+                                <p>
+                                    As a specialized distributor in the Korea Duty Free market, we are growing along with the Korean Duty Free Shop.
+                                </p>
+                            </div>
                         </article>
                     </div>
                 </div>
@@ -101,5 +98,12 @@
     </main>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php'); ?>
+    <script>
+        (function($){
+            setTimeout(function(){
+                $('.page-header').addClass('action');
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>

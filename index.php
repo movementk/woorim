@@ -44,7 +44,7 @@
         </div>
         <section class="special-agent">
             <div class="container-fluid">
-                <article>
+                <article class="slogan">
                     <figure>
                         <img src="/assets/images/main/img_special_agent01.jpg" class="img-fluid" alt="">
                     </figure>
@@ -53,7 +53,7 @@
                         <h3>We are specialized distributor <br>in Duty Free market</h3>
                     </div>
                 </article>
-                <article>
+                <article class="summary">
                     <figure>
                         <img src="/assets/images/main/img_special_agent02.jpg" class="img-fluid" alt="">
                     </figure>
@@ -166,25 +166,34 @@
         </section>
         <section class="office-info">
             <article class="seoul">
-                <small>Local office</small>
-                <h3>Seoul office </h3>
-                <address>
-                    TWO IFC 22F <br>10, Gukjegeum-ro Yeodeungpo-ku <br>Seoul Korea
-                </address>
+                <div class="backdrop"></div>
+                <div class="details">
+                    <small>Local office</small>
+                    <h3>Seoul office </h3>
+                    <address>
+                        TWO IFC 22F <br>10, Gukjegeum-ro Yeodeungpo-ku <br>Seoul Korea
+                    </address>
+                </div>
             </article>
             <article class="japan">
-                <small>Local office</small>
-                <h3>Japan Office</h3>
-                <address>
-                    K TOWER  4F, 1-2-7 Motoakasaka <br>Minato-ku Tokyo-to 107-0051 <br>JAPAN
-                </address>
+                <div class="backdrop"></div>
+                <div class="details">
+                    <small>Local office</small>
+                    <h3>Japan Office</h3>
+                    <address>
+                        K TOWER  4F, 1-2-7 Motoakasaka <br>Minato-ku Tokyo-to 107-0051 <br>JAPAN
+                    </address>
+                </div>
             </article>
             <article class="warehouse">
-                <small>Local office</small>
-                <h3>Warehouse</h3>
-                <address>
-                    Kumno-gil 2-50 Anseong-si <br>Kyounggi-do <br>South korea 
-                </address>
+                <div class="backdrop"></div>
+                <div class="details">
+                    <small>Local office</small>
+                    <h3>Warehouse</h3>
+                    <address>
+                        Kumno-gil 2-50 Anseong-si <br>Kyounggi-do <br>South korea 
+                    </address>
+                </div>
             </article>
         </section>
         <section class="our-brands">
@@ -269,6 +278,14 @@
                 }
             });
             */
+            // portfolio 관련
+            $(window).on('scroll', function() {
+                $('.special-agent > .container-fluid > article').each(function(index, elem) {
+                    if ($(window).scrollTop() > $(elem).offset().top - ($(window).height() / 1.3)) {
+                        $(elem).addClass('on');
+                    }
+                });
+            });
         })(jQuery);
     </script>
 </body>

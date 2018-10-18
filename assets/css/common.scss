@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&subset=korean');
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
-@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i');
+@import url(/assets/css/font/lora.css);
+@import url('/assets/css/font/pt.css');
 
 @mixin transition($property: all, $duration: .15s, $timing: linear, $delay: 0s) {
 	-webkit-transition-property: $property;
