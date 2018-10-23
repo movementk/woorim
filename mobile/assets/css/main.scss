@@ -45,7 +45,7 @@
                         opacity: 0;
                         font-size: 20px;
                         color: #000;
-                        font-weight: 400;
+                        font-weight: 600;
                         letter-spacing: 1px;
                         @include lora();
                         @include transition($duration: 1s);
@@ -81,7 +81,7 @@
         color: #2b2b2b;
         line-height: 26px;
         letter-spacing: .5px;
-        font-weight: 500;
+        font-weight: 600;
         @include lora();
         margin: 20px 0 30px;
     }
@@ -146,8 +146,8 @@
         font-size: 17px;
         color: #fff;
         line-height: 26px;
-        font-weight: 500;
-        letter-spacing: .5px;
+        font-weight: 600;
+        letter-spacing: 1px;
         margin-top: 15px;
         @include lora();
     }
@@ -179,11 +179,13 @@
     h3 {
         font-size: 16px;
         color: #2b2b2b;
-        font-weight: 500;
+        font-weight: 600;
         @include lora();
+        letter-spacing: .5px;
         margin-bottom: 15px;
     }
     .shop-slider {
+        position: relative;
         li {
             outline: none;
             .item-img {
@@ -204,9 +206,10 @@
                     h4 {
                         font-size: 13px;
                         color: #2b2b2b;
-                        font-weight: 400;
+                        font-weight: 600;
                         @include lora();
                         margin-bottom: 10px;
+                        letter-spacing: .5px;
                     }
                     .btn-more {
                         .btn-default {
@@ -266,8 +269,9 @@
         h3 {
             font-size: 17px;
             color: #fff;
-            font-weight: 400;
+            font-weight: 600;
             @include lora();
+            letter-spacing: .5px;
         }
         address {
             display: block;
@@ -297,26 +301,57 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// our-brands
+.our-brands {
+    padding: 30px 0;
+    .brand-area {
+        position: relative;
+        h3 {
+            font-size: 16px;
+            color: #2b2b2b;
+            font-weight: 600;
+            margin-bottom: 15px;
+            @include lora();
+            letter-spacing: .5px;
+        }
+        ul {
+            position: static;
+            li {
+                a {
+                    display: block;
+                    border: 1px solid #ebebeb;
+                    figure {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .slick-dots {
+            position: absolute;
+            top: 5px;
+            right: 0;
+            li {
+                display: inline-block;
+                button {
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    margin: 0 5px;
+                    padding: 0;
+                    text-indent: -9999px;
+                    border-radius: 50%;
+                    background: none;
+                    border: 1px solid #bad4e3;
+                }
+                &.slick-active {
+                    button {
+                        border-color: #588973;
+                        background-color: #588973;
+                    }
+                }
+            }
+        }
+    }
+}

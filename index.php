@@ -267,26 +267,5 @@
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php'); ?>
     <script src="/assets/js/main.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        (function($){
-            /* header scrolled event
-            $(window).on('scroll', function(){
-                if( $(this).scrollTop() > 0 ){
-                    $('body').addClass('scrolled');
-                } else {
-                    $('body').removeClass('scrolled');
-                }
-            });
-            */
-            // portfolio 관련
-            $(window).on('scroll', function() {
-                $('.special-agent > .container-fluid > article').each(function(index, elem) {
-                    if ($(window).scrollTop() > $(elem).offset().top - ($(window).height() / 1.3)) {
-                        $(elem).addClass('on');
-                    }
-                });
-            });
-        })(jQuery);
-    </script>
 </body>
 </html>

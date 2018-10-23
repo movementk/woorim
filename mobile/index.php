@@ -130,57 +130,48 @@
                 </div>
             </article>
         </section>
+        <section class="our-brands">
+            <div class="container">
+                <article class="brand-area">
+                    <h3>Our Brands</h3>
+                    <ul class="row">
+                        <li class="col-6">
+                            <a href="#">
+                                <figure>
+                                    <img src="/mobile/assets/images/main/img_brand_logo01.jpg" alt="">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="col-6">
+                            <a href="#">
+                                <figure>
+                                    <img src="/mobile/assets/images/main/img_brand_logo02.jpg" alt="">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="col-6">
+                            <a href="#">
+                                <figure>
+                                    <img src="/mobile/assets/images/main/img_brand_logo01.jpg" alt="">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="col-6">
+                            <a href="#">
+                                <figure>
+                                    <img src="/mobile/assets/images/main/img_brand_logo02.jpg" alt="">
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
     </main>
     
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/mobile/inc/footer.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/mobile/inc/docfoot.php'); ?>
+    <script src="/mobile/assets/js/main.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        (function($){
-            // gnb open event
-            $(document).on('click','#header .btn-nav-open', function(){
-                $(this).addClass('btn-nav-close');
-                $(this).removeClass('btn-nav-open');
-                $('body').addClass('opened');
-            });
-            $(document).on('click','#header .btn-nav-close', function(){
-                $(this).addClass('btn-nav-open');
-                $(this).removeClass('btn-nav-close');
-                $('body').removeClass('opened');
-            });
-            
-            // jumbo slider
-            $('.visual-slider').on('init', function(){
-                $('video').each(function () {
-                    this.play();
-                });
-            });
-            $(document).ready(function(){
-                $('.visual-slider').slick({
-                    arrows: false,
-                    dots: false
-                });
-            });
-            $('.visual-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-                $('.slick-slide').removeClass('action');
-                setTimeout(function (){ 
-                    $('.slick-active').addClass('action'); 
-                });
-            });
-            $('.visual-slider').on('init', function(event,slick){
-                setTimeout(function(){ 
-                    $('.slick-active').addClass('action'); 
-                });
-            });
-            
-            // our-shop slider
-            $(document).ready(function(){
-                $('.shop-slider').slick({
-                    arrows: false,
-                    dots: true
-                });
-            });
-        })(jQuery);
-    </script>
 </body>
 </html>
