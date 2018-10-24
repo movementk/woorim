@@ -18,11 +18,11 @@
         <div class="gnb-wrap">
             <div class="nav-body">
                 <ul>
-                    <li><a href="#">WHO WE ARE</a></li>
-                    <li><a href="#">WHAT WE DO</a></li>
-                    <li><a href="#">BRANDS</a></li>
-                    <li><a href="#">SHOPS</a></li>
-                    <li><a href="#">LOCAL OFFICE</a></li>
+                    <li><a href="/mobile/introduction/introduce.php">WHO WE ARE</a></li>
+                    <li><a href="/mobile/business/work.php">WHAT WE DO</a></li>
+                    <li><a href="/mobile/brand/brand_list.php">BRANDS</a></li>
+                    <li><a href="/mobile/shop/shop_list.php">SHOPS</a></li>
+                    <li><a href="/mobile/office/location.php">LOCAL OFFICE</a></li>
                 </ul>
             </div>
             <div class="nav-foot">

@@ -40,5 +40,14 @@
             slidesToScroll: 2
         });
     });
+    
+    // effect event
+    $(window).on('scroll', function() {
+        $('.special-agent').each(function(index, elem) {
+            if ($(window).scrollTop() > $(elem).offset().top - ($(window).height() / 1.3)) {
+                $(elem).addClass('on');
+            }
+        });
+    });
 
 })(jQuery);

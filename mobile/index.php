@@ -40,9 +40,9 @@
                     Woorim Trade is a specialized distributor in the Korea Duty Free Shop and is expanding and growing with our valuable partners.
                 </p>
                 <ul>
-                    <li><a href="#">Our mission</a></li>
-                    <li><a href="#">Our vision</a></li>
-                    <li><a href="#">Our hisoty</a></li>
+                    <li><a href="/mobile/introduction/introduce.php">Our mission</a></li>
+                    <li><a href="/mobile/introduction/introduce.php">Our vision</a></li>
+                    <li><a href="/mobile/introduction/introduce.php">Our hisoty</a></li>
                 </ul>
             </div>
         </section>
@@ -54,7 +54,7 @@
                 can succeed in Korea's duty free market based on its <br>
                 brand value and philosophy.</p>
                 <div class="btn-more">
-                    <a href="#" class="btn btn-default">Detail view</a>
+                    <a href="/mobile/business/work.php" class="btn btn-default">Detail view</a>
                 </div>
             </div>
         </section>
@@ -72,7 +72,7 @@
                             <div>
                                 <h4>The Shilla DFS</h4>
                                 <div class="btn-more">
-                                    <a href="#" class="btn btn-default">Detail view</a>
+                                    <a href="/mobile/shop/shop_list.php" class="btn btn-default">Detail view</a>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                             <div>
                                 <h4>The Shilla DFS</h4>
                                 <div class="btn-more">
-                                    <a href="#" class="btn btn-default">Detail view</a>
+                                    <a href="/mobile/shop/shop_list.php" class="btn btn-default">Detail view</a>
                                 </div>
                             </div>
                         </div>
