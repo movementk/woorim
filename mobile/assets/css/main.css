@@ -402,31 +402,31 @@ a {
   .office article.warehouse {
     background-image: url(/mobile/assets/images/main/bg_warehouse.jpg); }
 
-.our-brands {
+.our-partners {
   padding: 30px 0; }
-  .our-brands .brand-area {
+  .our-partners .partners-area {
     position: relative; }
-    .our-brands .brand-area h3 {
+    .our-partners .partners-area h3 {
       font-size: 16px;
       color: #2b2b2b;
       font-weight: 600;
       margin-bottom: 15px;
       font-family: 'Lora', serif;
       letter-spacing: .5px; }
-    .our-brands .brand-area ul {
+    .our-partners .partners-area ul {
       position: static; }
-      .our-brands .brand-area ul li a {
+      .our-partners .partners-area ul li a {
         display: block;
         border: 1px solid #ebebeb; }
-        .our-brands .brand-area ul li a figure img {
+        .our-partners .partners-area ul li a figure img {
           width: 100%; }
-    .our-brands .brand-area .slick-dots {
+    .our-partners .partners-area .slick-dots {
       position: absolute;
       top: 5px;
       right: 0; }
-      .our-brands .brand-area .slick-dots li {
+      .our-partners .partners-area .slick-dots li {
         display: inline-block; }
-        .our-brands .brand-area .slick-dots li button {
+        .our-partners .partners-area .slick-dots li button {
           display: block;
           width: 12px;
           height: 12px;
@@ -436,7 +436,7 @@ a {
           border-radius: 50%;
           background: none;
           border: 1px solid #bad4e3; }
-        .our-brands .brand-area .slick-dots li.slick-active button {
+        .our-partners .partners-area .slick-dots li.slick-active button {
           border-color: #588973;
           background-color: #588973; }
 

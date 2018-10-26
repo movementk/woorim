@@ -32,7 +32,7 @@
         </div>
         <section class="special-agent">
             <div class="container">
-                <small>Who we us</small>
+                <small>Who we are</small>
                 <h3>We are specialized distributor in Duty Free market</h3>
                 <p>
                     Since the beginning of 2000s, Korea's duty-free market has been developing and its market size has exceeded USD 10 billion. 
@@ -130,10 +130,10 @@
                 </div>
             </article>
         </section>
-        <section class="our-brands">
+        <section class="our-partners">
             <div class="container">
-                <article class="brand-area">
-                    <h3>Our Brands</h3>
+                <article class="partners-area">
+                    <h3>Our Partners</h3>
                     <ul class="row">
                         <li class="col-6">
                             <a href="#">

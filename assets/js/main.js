@@ -37,7 +37,7 @@
 
     // our-brands slider
     $(document).ready(function(){
-        $('.our-brands ul').slick({
+        $('.our-partners ul').slick({
             dots: true,
             arrows: false,
             slidesToShow: 4,

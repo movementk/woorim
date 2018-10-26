@@ -33,7 +33,7 @@
 
     // our-brands slider
     $(document).ready(function(){
-        $('.our-brands .brand-area > ul').slick({
+        $('.our-partners .partners-area > ul').slick({
             arrows: false,
             dots: true,
             slidesToShow: 2,

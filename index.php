@@ -49,7 +49,7 @@
                         <img src="/assets/images/main/img_special_agent01.jpg" class="img-fluid" alt="">
                     </figure>
                     <div class="details">
-                        <small>Who we us</small>
+                        <small>Who we are</small>
                         <h3>We are specialized distributor <br>in Duty Free market</h3>
                     </div>
                 </article>
@@ -196,10 +196,10 @@
                 </div>
             </article>
         </section>
-        <section class="our-brands">
+        <section class="our-partners">
             <div class="container">
-                <h3>Our Brands</h3>
-                <div class="brand-list">
+                <h3>Our Partners</h3>
+                <div class="partners-list">
                     <ul class="row">
                         <li class="col-3">
                             <a href="#">

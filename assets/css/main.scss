@@ -598,8 +598,8 @@
     }
 }
 
-// our-brands
-.our-brands {
+// our-partners
+.our-partners {
     padding: 90px 0;
     h3 {
         display: inline-block;
@@ -609,7 +609,7 @@
         @include lora();
         margin-bottom: 30px;
     }
-    .brand-list {
+    .partners-list {
         position: relative;
         .slick-dots {
             position: absolute;
