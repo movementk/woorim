@@ -8,7 +8,9 @@
     $(document).ready(function(){
         $('.visual-slider').slick({
             arrows: false,
-            dots: false
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 8000
         });
     });
     $('.visual-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
@@ -27,7 +29,9 @@
     $(document).ready(function(){
         $('.shop-slider').slick({
             arrows: false,
-            dots: true
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 6000
         });
     });
 
@@ -37,7 +41,9 @@
             arrows: false,
             dots: true,
             slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 6000,
         });
     });
     

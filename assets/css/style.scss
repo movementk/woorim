@@ -780,3 +780,95 @@ section {
         }
     }
 }
+
+// inquiry-write
+.inquiry-write {
+    padding-top: 0;
+    background-image: url(/assets/images/inquiry/bg_inquiry.jpg);
+    background-position: 0 0;
+    .section-header {
+        padding: 90px 0 100px;
+        h3 {
+            font-size: 36px;
+            color: #2b2b2b;
+            @include lora();
+            margin-bottom: 50px;
+        }
+        p {
+            font-size: 19px;
+            color: #555;
+            @include maven();
+        }
+    }
+    .section-content {
+        .table-wrap {
+            .table {
+                table-layout: fixed;
+                tbody {
+                    tr {
+                        th {
+                            vertical-align: middle;
+                            width: 170px;
+                            border: 0;
+                            background: none;
+                            &.v-top {
+                                padding-top: 15px;
+                                vertical-align: top;
+                            }
+                            label {
+                                font-weight: 400;
+                                @include lora();
+                                &:after {
+                                    content: " *";
+                                }
+                            }
+                        }
+                        td {
+                            padding: 10px 0;
+                            border: 0;
+                            background: none;
+                            .form-group {
+                                .form-control {
+                                    width: 100%;
+                                    height: 40px;
+                                    border: 1px solid #fff;
+                                }
+                                textarea {
+                                    width: 100%;
+                                    height: 280px !important;
+                                }
+                            }
+                            &.s-form {
+                                .form-group {
+                                    .form-control {
+                                        width: 600px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn-area {
+            text-align: right;
+            margin-top: 30px;
+            p {
+                .btn-send {
+                    width: 170px;
+                    line-height: 50px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 16px;
+                    @include lora();
+                    display: inline-block;
+                    background-color: #588973;
+                    @include transition();
+                    &:hover {
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+}

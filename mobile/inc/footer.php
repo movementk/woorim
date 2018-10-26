@@ -5,9 +5,9 @@
             <img src="/mobile/assets/images/logo_foot.png" alt="">
         </h2>
         <ul class="quick-list">
-            <li><a href="#">Who we are</a></li>
-            <li><a href="#">Local office</a></li>
-            <li><a href="mailto:youngsohn@woorimtrade.com">Inquiry</a></li>
+            <li><a href="/mobile//introduction/introduce.php">Who we are</a></li>
+            <li><a href="/mobile/office/location.php">Local office</a></li>
+            <li><a href="/mobile/inquiry/inquiry_write.php">Inquiry</a></li>
         </ul>
         <div class="company-info">
             <address>[Head Office] 10, Gukjegeumyung-ro, Yeongdeungpo-gu, Seoul, Republic of Korea. 07326</address>

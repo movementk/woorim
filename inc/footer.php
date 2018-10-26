@@ -31,7 +31,7 @@
                 <ul class="quick-list">
                     <li><a href="/introduction/introduce.php">Who we are</a></li>
                     <li><a href="/office/location.php">Local office</a></li>
-                    <li><a href="mailto:youngsohn@woorimtrade.com">Inquiry</a></li>
+                    <li><a href="/inquiry/inquiry_write.php">Inquiry</a></li>
                 </ul>
             </div>
         </div>
