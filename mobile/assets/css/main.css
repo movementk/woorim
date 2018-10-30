@@ -440,4 +440,66 @@ a {
           border-color: #588973;
           background-color: #588973; }
 
+.btn-popup {
+  display: block;
+  padding: 0;
+  width: 100px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 13px;
+  color: #000;
+  background-color: #999; }
+
+#main-popup .modal-dialog {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  #main-popup .modal-dialog .modal-content {
+    border: 0;
+    border-radius: 0;
+    background: none; }
+    #main-popup .modal-dialog .modal-content .modal-body {
+      position: relative;
+      border: 0;
+      padding: 0; }
+      #main-popup .modal-dialog .modal-content .modal-body .slick-dots {
+        position: absolute;
+        bottom: 10px;
+        right: 0; }
+        #main-popup .modal-dialog .modal-content .modal-body .slick-dots li {
+          display: inline-block; }
+          #main-popup .modal-dialog .modal-content .modal-body .slick-dots li button {
+            width: 14px;
+            height: 14px;
+            padding: 0;
+            margin: 0 3px;
+            display: block;
+            text-indent: -99999px;
+            background: none;
+            border-radius: 50%;
+            border: 1px solid #fff; }
+          #main-popup .modal-dialog .modal-content .modal-body .slick-dots li.slick-active button {
+            border: 1px solid #ff7f00;
+            background-color: #ff7f00; }
+    #main-popup .modal-dialog .modal-content .modal-footer {
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      margin-top: 15px; }
+      #main-popup .modal-dialog .modal-content .modal-footer label {
+        /*float: left;*/
+        font-size: 13px;
+        color: #fff;
+        line-height: 30px;
+        margin-right: auto; }
+        #main-popup .modal-dialog .modal-content .modal-footer label input {
+          position: relative;
+          top: 2px;
+          margin-right: 5px; }
+      #main-popup .modal-dialog .modal-content .modal-footer .btn-close {
+        float: right;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 13px;
+        background-color: #999; }
+
 /*# sourceMappingURL=main.css.map */
