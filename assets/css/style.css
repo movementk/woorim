@@ -319,10 +319,14 @@ section {
 .introduce .history .section-content ol li ~ li {
   margin-top: 20px; }
 .introduce .history .section-content ol li dl {
-  overflow: hidden; }
+  /*overflow: hidden;*/
+  display: table;
+  width: 100%;
+  table-layout: fixed; }
   .introduce .history .section-content ol li dl dt {
     position: relative;
-    float: left;
+    /*float: left;*/
+    display: table-cell;
     width: 200px;
     font-size: 22px;
     font-weight: 400;
@@ -331,6 +335,7 @@ section {
     text-align: center;
     background-color: #8aac9d;
     font-family: 'Lora', serif;
+    vertical-align: middle;
     letter-spacing: 3px; }
     .introduce .history .section-content ol li dl dt:after {
       position: absolute;
@@ -351,12 +356,13 @@ section {
       border-radius: 50%;
       background-color: #bfbfbf; }
   .introduce .history .section-content ol li dl dd {
-    display: inline-block;
+    display: table-cell;
     font-size: 18px;
     color: #666;
+    vertical-align: middle;
     font-weight: 400;
-    margin-left: 100px;
-    line-height: 70px; }
+    padding-left: 100px;
+    line-height: 28px; }
 .introduce .history .section-content ol li:nth-of-type(odd) dl dt {
   background-color: #588973; }
 

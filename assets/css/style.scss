@@ -164,10 +164,14 @@ section {
                         margin-top: 20px;
                     }
                     dl {
-                        overflow: hidden;
+                        /*overflow: hidden;*/
+                        display: table;
+                        width: 100%;
+                        table-layout: fixed;
                         dt {
                             position: relative;
-                            float: left;
+                            /*float: left;*/
+                            display: table-cell;
                             width: 200px;
                             font-size: 22px;
                             font-weight: 400;
@@ -176,6 +180,7 @@ section {
                             text-align: center;
                             background-color: #8aac9d;
                             @include lora();
+                            vertical-align: middle;
                             letter-spacing: 3px;
                             &:after {
                                 position: absolute;
@@ -200,12 +205,13 @@ section {
                             }
                         }
                         dd {
-                            display: inline-block;
+                            display: table-cell;;
                             font-size: 18px;
                             color: #666;
+                            vertical-align: middle;
                             font-weight: 400;
-                            margin-left: 100px;
-                            line-height: 70px;
+                            padding-left: 100px;
+                            line-height: 28px;
                         }
                     }
                     &:nth-of-type(odd) {
