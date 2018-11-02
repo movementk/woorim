@@ -5,6 +5,7 @@
             this.play();
         });
     });
+
     $(document).ready(function(){
         $('.visual-slider').slick({
             autoplay: true,
@@ -28,6 +29,8 @@
     // shops-list slider
     $(document).ready(function(){
         $('.shops-list ul').slick({
+			autoplay: true,
+            autoplaySpeed: 6000,
             dots: true,
             arrows: false,
             slidesToShow: 3,
@@ -38,6 +41,8 @@
     // our-brands slider
     $(document).ready(function(){
         $('.our-partners ul').slick({
+			autoplay: true,
+            autoplaySpeed: 6000,
             dots: true,
             arrows: false,
             slidesToShow: 4,

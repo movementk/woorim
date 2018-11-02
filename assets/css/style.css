@@ -551,7 +551,7 @@ section {
       background: none; }
       #brand-popup .modal-dialog .modal-content .modal-body {
         position: relative;
-        display: table;
+        overflow: hidden;
         width: auto;
         height: 100%;
         padding: 0; }
@@ -573,14 +573,15 @@ section {
             display: block;
             margin: 0 auto; }
         #brand-popup .modal-dialog .modal-content .modal-body figure {
-          display: table-cell;
-          height: 100%; }
+          float: left;
+          width: 750px; }
         #brand-popup .modal-dialog .modal-content .modal-body .details {
-          position: relative;
-          display: table-cell;
-          height: 100%;
+          float: left;
+          width: 240px;
+          height: 650px;
           padding: 80px 50px 50px;
           width: 420px;
+          overflow-y: scroll;
           vertical-align: top;
           background-color: #fff; }
           #brand-popup .modal-dialog .modal-content .modal-body .details h4 {
@@ -594,11 +595,8 @@ section {
             font-weight: 300;
             word-break: keep-all;
             line-height: 26px;
-            margin-top: 30px; }
+            margin: 30px 0 50px; }
           #brand-popup .modal-dialog .modal-content .modal-body .details a {
-            position: absolute;
-            bottom: 50px;
-            left: 50px;
             display: block;
             font-size: 13px;
             color: #666;
