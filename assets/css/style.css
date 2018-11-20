@@ -297,6 +297,7 @@ section {
       .introduce .mission-vision .section-content article .item-img figure .img-fliud {
         width: 100%; }
   .introduce .mission-vision .section-content article .details {
+    height: 226px;
     display: block;
     padding: 40px;
     background-color: #f7f7f7; }
