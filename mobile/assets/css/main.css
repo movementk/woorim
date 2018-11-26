@@ -155,6 +155,8 @@ a {
           transition-timing-function: linear;
           -webkit-transition-delay: 0s;
           transition-delay: 0s; }
+          .jumbotron ul li .details .v-align h3.white-txt {
+            color: #fff; }
     .jumbotron ul li.action .details .v-align h3 {
       top: 0;
       opacity: 1; }

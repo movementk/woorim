@@ -49,6 +49,9 @@
                         letter-spacing: 1px;
                         @include lora();
                         @include transition($duration: 1s);
+                        &.white-txt {
+                            color: #fff;
+                        }
                     }
                 }
             }

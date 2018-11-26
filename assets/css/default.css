@@ -217,12 +217,22 @@ body {
           transition-timing-function: linear;
           -webkit-transition-delay: 0s;
           transition-delay: 0s; }
-        #gnb > ul > li > a:hover:before {
-          width: 100%;
-          color: #ff7f00; }
-        #gnb > ul > li > a:hover span {
-          width: 100%;
-          margin-left: -50%; }
+        #gnb > ul > li > a:hover {
+          opacity: .7; }
+          #gnb > ul > li > a:hover:before {
+            width: 100%;
+            color: #ff7f00; }
+          #gnb > ul > li > a:hover span {
+            width: 100%;
+            margin-left: -50%; }
+      #gnb > ul > li.active > a:before {
+        width: 100%;
+        color: #ff7f00; }
+      #gnb > ul > li.active > a span {
+        width: 100%;
+        margin-left: -50%; }
+      #gnb > ul > li.active > a:hover {
+        opacity: 1; }
 
 #footer {
   padding: 50px 0 40px;

@@ -55,6 +55,7 @@
                     @include transition($duration: .20s);
                 }
                 &:hover {
+                    opacity: .7;
                     &:before {
                         width: 100%;
                         color: #ff7f00;
@@ -62,6 +63,21 @@
                     span {
                         width: 100%;
                         margin-left: -50%;
+                    }
+                }
+            }
+            &.active {
+                > a {
+                    &:before {
+                        width: 100%;
+                        color: #ff7f00;
+                    }
+                    span {
+                        width: 100%;
+                        margin-left: -50%;
+                    }
+                    &:hover {
+                        opacity: 1;
                     }
                 }
             }

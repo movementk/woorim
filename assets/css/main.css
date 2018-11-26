@@ -193,6 +193,7 @@ body {
         .jumbotron .visual-slider li .slogan .table-box .v-align {
           display: table-cell;
           height: 100%;
+          padding-bottom: 100px;
           vertical-align: middle; }
           .jumbotron .visual-slider li .slogan .table-box .v-align h3 {
             position: relative;
@@ -209,6 +210,8 @@ body {
             -webkit-transition-delay: 0s;
             transition-delay: 0s;
             font-family: 'Lora', serif; }
+            .jumbotron .visual-slider li .slogan .table-box .v-align h3.white-txt {
+              color: #fff; }
     .jumbotron .visual-slider li.action .slogan .table-box .v-align h3 {
       top: 0;
       opacity: 1; }

@@ -39,6 +39,7 @@
                     .v-align {
                         display: table-cell;
                         height: 100%;
+                        padding-bottom: 100px;
                         vertical-align: middle;
                         h3 {
                             position: relative;
@@ -48,6 +49,9 @@
                             top: -50px;
                             @include transition($duration: 1s);
                             @include lora();
+                            &.white-txt {
+                                color: #fff;
+                            }
                         }
                     }
                 }
