@@ -123,6 +123,7 @@ section {
                     }
                 }
                 .details {
+                    height: 226px;
                     display: block;
                     padding: 40px;
                     background-color: #f7f7f7;
@@ -440,7 +441,7 @@ section {
             background: none;
             .modal-body {
                 position: relative;
-                display: table;
+                overflow: hidden;
                 width: auto;
                 height: 100%;
                 padding: 0;
@@ -465,15 +466,16 @@ section {
                     }
                 }
                 figure {
-                    display: table-cell;
-                    height: 100%;
+                    float: left;
+                    width: 750px;
                 }
                 .details {
-                    position: relative;
-                    display: table-cell;
-                    height: 100%;
+                    float: left;
+                    width: 240px;
+                    height: 650px;
                     padding: 80px 50px 50px;
                     width: 420px;
+                    overflow-y: scroll;
                     vertical-align: top;
                     background-color: #fff;
                     h4 {
@@ -489,12 +491,9 @@ section {
                         font-weight: 300;
                         word-break: keep-all;
                         line-height: 26px;
-                        margin-top: 30px;
+                        margin: 30px 0 50px;
                     }
                     a {
-                        position: absolute;
-                        bottom: 50px;
-                        left: 50px;
                         display: block;
                         font-size: 13px;
                         color: #666;
